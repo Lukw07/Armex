@@ -1,0 +1,69 @@
+/* Reset stylů */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Globální nastavení */
+:root, html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Zajistí správnou výšku stránky */
+    flex-direction: column; /* Umožní přirozený tok obsahu */
+}
+
+/* Hero sekce */
+.hero-section {
+    background-image: url('../assets/b62931b9-7bed-4909-954d-1594b89f8af8.org_f749a033dded2ebe_1566744234000.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Pokryje výšku celé obrazovky */
+    width: 100%; /* Pokryje celou šířku stránky */
+}
+
+/* Overlay */
+.hero-section-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Přesně kopíruje rodiče */
+    background-color: rgba(0, 0, 0, 0.5); /* Poloprůhledné černé pozadí */
+}
+
+/* Obsah */
+.hero-content {
+    text-align: center;
+    color: white;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-subtitle {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+}
+
+/* Tlačítko */
+.hero-button {
+    margin-top: 1.5rem;
+    display: inline-block;
+    background-color: #dc2626;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #9f1239;
+}
+
